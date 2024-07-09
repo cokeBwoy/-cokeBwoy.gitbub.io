@@ -146,7 +146,7 @@
             const decodedUrl = atob(encodedUrl);
             const response = await fetch(decodedUrl); 
             const text = await response.text();
-            return 
+            return text
                 .split(/\r?\n/)
                 .map(email => email.trim()) 
                 .filter(email => email.length > 0 && validateEmail(email));
